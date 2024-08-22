@@ -1,0 +1,67 @@
+/* created with ERDot < https://github.com/ehne/ERDot > */
+digraph G {
+    graph [
+        nodesep=0.5;
+        rankdir="LR";
+        concentrate=true;
+        splines="spline";
+        fontname="Helvetica";
+        pad="0.2,0.2",
+        label="",
+        
+    ];
+    
+    node [shape=plain, fontname="Helvetica"];
+    edge [
+        dir=both,
+        fontsize=12,
+        arrowsize=0.9,
+        penwidth=1.0,
+        labelangle=32,
+        labeldistance=1.8,
+        fontname="Helvetica"
+    ];
+    
+    "customers" [ label=<
+        <table border="0" cellborder="1" cellspacing="0" >
+        <tr><td><i>customers</i></td></tr>
+        <tr><td port="id" align="left" cellpadding="5">PK id <font color="grey60">int()</font></td></tr>
+        <tr><td port="fst_nm" align="left" cellpadding="5">fst_nm <font color="grey60">char()</font></td></tr>
+        <tr><td port="lst_nm" align="left" cellpadding="5">lst_nm <font color="grey60">char()</font></td></tr>
+    </table>>];
+    "orders" [ label=<
+        <table border="0" cellborder="1" cellspacing="0" >
+        <tr><td><i>orders</i></td></tr>
+        <tr><td port="id" align="left" cellpadding="5">PK id <font color="grey60">int()</font></td></tr>
+        <tr><td port="cst_id" align="left" cellpadding="5">FK cst_id <font color="grey60">int()</font></td></tr>
+        <tr><td port="ord_dt" align="left" cellpadding="5">ord_dt <font color="grey60">date()</font></td></tr>
+        <tr><td port="ord_stt" align="left" cellpadding="5">ord_stt <font color="grey60">char()</font></td></tr>
+    </table>>];
+    "payments" [ label=<
+        <table border="0" cellborder="1" cellspacing="0" >
+        <tr><td><i>payments</i></td></tr>
+        <tr><td port="id" align="left" cellpadding="5">PK id <font color="grey60">int()</font></td></tr>
+        <tr><td port="ord_id" align="left" cellpadding="5">FK ord_id <font color="grey60">int</font></td></tr>
+        <tr><td port="pmt_mtd" align="left" cellpadding="5">pmt_mtd <font color="grey60">char()</font></td></tr>
+        <tr><td port="amt" align="left" cellpadding="5">amt <font color="grey60">float()</font></td></tr>
+    </table>>];
+
+    
+    "customers":"id"->"orders":"cst_id" [
+        arrowhead=noneotee,
+
+        arrowtail=ocrow,
+    ];
+
+    
+    "orders":"id"->"payments":"ord_id" [
+        arrowhead=noneotee,
+
+        arrowtail=ocrow,
+    ];
+
+
+
+    
+
+}
