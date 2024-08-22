@@ -1,0 +1,20 @@
+tables:
+    customers:
+        "*id": int()
+        fst_nm: char()
+        lst_nm: char()
+    orders:
+        "*id": int()
+        "+cst_id": int()
+        ord_dt: date()
+        ord_stt: char()
+    payments:
+        "*id": int()
+        "+ord_id": int
+        pmt_mtd: char()
+        amt: float()
+relations:
+- customers:id *--1 orders:cst_id
+- orders:id *--1 payments:ord_id
+rankAdjustments: ''
+label: ''

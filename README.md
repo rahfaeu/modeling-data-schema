@@ -101,5 +101,6 @@ Sales Data
 ### Tabelas lógicas Relacionais com as (Chave PK e campos)
 
 
+![relational](./diagrams/relational.png)
 
 
