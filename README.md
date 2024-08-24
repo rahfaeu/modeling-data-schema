@@ -104,3 +104,6 @@ Sales Data
 ![relational](./diagrams/relational.png)
 
 
+## 5. Crie as tabelas Fato e Dimensão
+
+![relational](./diagrams/modelagem_dimensional.png)
