@@ -2,6 +2,13 @@
 Trabalho de Modelagem para MBA Engenharia de Dados Mackenzie
 ### Big Data Processig
 
+**Integrantes**:
+| Nome                           |
+|--------------------------------|
+| Neoaquison Conceição Medeiros  |
+| Rafael Medeiros dos Santos     |
+| Samuel Silva Perumalswamy      |
+
 # Case de Negócio
 
 Pense em uma empresa, desenhe as tabelas Relacionais e Multidimensionais
