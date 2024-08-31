@@ -36,7 +36,7 @@ Sales Data
 
 | Lógico             | Físico    | Chave |
 |--------------------|-----------|-------|
-| Código do Cliente  | `id`      | PK    |
+| Código do Cliente  | `cst_id`  | PK    |
 | Primeiro Nome      | `fst_nm`  |       |
 | Sobrenome          | `lst_nm`  |       |
 
@@ -44,7 +44,7 @@ Sales Data
 
 | Lógico              | Físico     | Chave |
 |---------------------|------------|-------|
-| Código do Pedido    | `id`       | PK    |
+| Código do Pedido    | `ord_id`   | PK    |
 | Código do Cliente   | `cst_id`   | FK    |
 | Data do Pedido      | `ord_dt`   |       |
 | Status do Pedido    | `ord_stt`  |       |
@@ -53,26 +53,26 @@ Sales Data
 
 | Lógico              | Físico     | Chave |
 |---------------------|------------|-------|
-| Código do Pagamento | `id`       | PK    |
+| Código do Pagamento | `pmt_id`   | PK    |
 | Código do Pedido    | `ord_id`   | FK    |
 | Método de Pagamento | `pmt_mtd`  |       |
-| Valor do Pagamento  | `amt`      |       |
+| Valor do Pagamento  | `amt`      |       | 
 
 ## 3. Crie o Glossário de Dados
 
-| Campo              | Descrição                                                          |
-|--------------------|--------------------------------------------------------------------|
-| customer.id        | Identificador único do cliente.                                    |  
-| customer.fst_nm    | Primeiro nome do cliente.                                          |
-| customer.lst_nm    | Sobrenome do cliente.                                              |
-| orders.id          | Identificador único do pedido.                                     |
-| orders.cst_id      | Identificador do cliente que fez o pedido.                         |
-| orders.ord_dt      | Data em que o pedido foi realizado.                                |
-| orders.ord_stt     | Status atual do pedido (ex: pendente, concluído).                  |
-| payments.id        | Identificador único do pagamento.                                  |
-| payments.ord_id    | Identificador do pedido relacionado ao pagamento.                  |
-| payments.pmt_mtd   | Método utilizado para pagamento (ex: cartão de crédito, PayPal).   |
-| payments.amt       | Valor total do pagamento.                                          |
+| Nome Lógico                 | Nome Físico      | Tipo          | Descrição                                                                | Nullable |
+|-----------------------------|------------------|---------------|--------------------------------------------------------------------------|----------|
+| Código do Cliente           | customer.id      | INT           | Identificador único do cliente.                                          | N        |
+| Primeiro Nome               | customer.fst_nm  | VARCHAR(50)   | Primeiro nome do cliente.                                                | N        |
+| Sobrenome                   | customer.lst_nm  | VARCHAR(50)   | Sobrenome do cliente.                                                    | N        |
+| Código do Pedido            | orders.id        | INT           | Identificador único do pedido.                                           | N        |
+| Código do Cliente           | orders.cst_id    | INT           | Identificador do cliente que fez o pedido.                               | N        |
+| Data do Pedido              | orders.ord_dt    | DATE          | Data em que o pedido foi realizado.                                      | N        |
+| Status do Pedido            | orders.ord_stt   | VARCHAR(20)   | Status atual do pedido (ex: pendente, concluído).                        | N        |
+| Código do Pagamento         | payments.id      | INT           | Identificador único do pagamento.                                        | N        |
+| Código do Pedido            | payments.ord_id  | INT           | Identificador do pedido relacionado ao pagamento.                        | N        |
+| Data do Pedido              | payments.pmt_mtd | VARCHAR(20)   | Método utilizado para pagamento (ex: cartão de crédito, PayPal).         | N        |
+| Status do Pedido            | payments.amt     | DECIMAL(10,2) | Valor total do pagamento.                                                | N        |
 
 
 ## 4. Desenhe as tabelas físicas e lógicas Relacionais com as (Chave PK e campos)
