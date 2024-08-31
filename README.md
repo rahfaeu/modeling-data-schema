@@ -107,3 +107,8 @@ Sales Data
 ## 5. Crie as tabelas Fato e Dimensão
 
 ![relational](./diagrams/modelagem_dimensional.png)
+
+
+## 6. Crie o Script SQL para criar a tabela FATO (Extract / Data Collection)
+
+![relational](./diagrams/create_table.png)
