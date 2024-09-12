@@ -9,6 +9,9 @@ Trabalho de Modelagem para MBA Engenharia de Dados Mackenzie
 | Rafael Medeiros dos Santos     |
 | Samuel Silva Perumalswamy      |
 
+# Case 1 - Arquitetura
+![Arquitetura](https://github.com/rahfaeu/modeling-data-schema/blob/main/case-01/Atividade%201%20-%20arquitetura.jpg)
+
 # Case de Negócio
 
 Pense em uma empresa, desenhe as tabelas Relacionais e Multidimensionais
