@@ -40,7 +40,7 @@ Por meio de uma gestão focada em sustentabilidade e responsabilidade social, no
 Nossa missão é fornecer produtos de alta qualidade e uma experiência de compra excepcional, garantindo a satisfação dos nossos clientes e contribuindo para o sucesso de seus negócios. Buscamos inovação constante e excelência em cada etapa do nosso serviço, promovendo o crescimento sustentável.
 
 ## **Visão**
-Ser reconhecida como a empresa líder no mercado de [seu setor] pela inovação, eficiência e compromisso com os clientes, tornando-nos a primeira escolha tanto para consumidores quanto para parceiros comerciais. Queremos ser uma referência de qualidade e confiabilidade em [seu segmento].
+Ser reconhecida como a empresa líder no mercado de analise de dados e vendas pela inovação, eficiência e compromisso com os clientes, tornando-nos a primeira escolha tanto para consumidores quanto para parceiros comerciais. Queremos ser uma referência de qualidade e confiabilidade em analises de dados e crescimento de vendas.
 
 ## **Valores**
 1. **Inovação**: Promover a criatividade e buscar soluções inovadoras que atendam às necessidades dos nossos clientes.
